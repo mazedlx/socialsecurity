@@ -33,12 +33,12 @@ class SocialSecurity
 
     protected function validate(): bool
     {
-        $digits = \preg_replace('/[\s]/', '', $this->socialSecurityNumber);
-        if (! (bool) \preg_match('/^[\d]+$/', $digits)) {
+        $digits = preg_replace('/[\s]/', '', $this->socialSecurityNumber);
+        if (! (bool) preg_match('/^[\d]+$/', $digits)) {
             return false;
         }
 
-        $socialSecurityDigits = \collect(\mb_str_split($digits, 1));
+        $socialSecurityDigits = collect(mb_str_split($digits, 1));
 
         $checksum = $socialSecurityDigits
             ->filter(function ($digit, $index) {
