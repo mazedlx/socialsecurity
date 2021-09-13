@@ -3,7 +3,7 @@
 
 # SocialSecurity
 
-Check if Austiran social security numbers are valid.
+Check if Austrian social security numbers are valid.
 
 ## Installation and Usage
 
