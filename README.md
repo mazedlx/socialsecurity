@@ -8,4 +8,6 @@ Check if Austiran social security numbers are valid.
 
 ```php
 $socialSecurity = new SocialSecurity('1991 02 03 99');
+
+$socialSecurity->isValid(); // true
 ```
