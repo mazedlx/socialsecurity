@@ -21,7 +21,7 @@ class SocialSecurity
 
     public $socialSecurityNumber;
 
-    public function __construct(mixed $socialSecurityNumber)
+    public function __construct($socialSecurityNumber)
     {
         $this->socialSecurityNumber = $socialSecurityNumber;
     }
