@@ -1,0 +1,44 @@
+<?php
+
+use PhpCsFixer\Config;
+use PhpCsFixer\Finder;
+
+$finder = Finder::create()
+    ->exclude('bootstrap/cache')
+    ->exclude('node_modules')
+    ->exclude('storage')
+    ->in(__DIR__)
+    ->notName('*.blade.php')
+    ->notName('.phpstorm.meta.php')
+    ->notName('_ide_*.php');
+
+return Config::create()
+    ->setUsingCache(false)
+    ->setRiskyAllowed(true)
+    ->setRules([
+        '@Symfony' => true,
+        '@Symfony:risky' => true,
+        'array_syntax' => ['syntax' => 'short'],
+        'array_indentation' => true,
+        'concat_space' => ['spacing' => 'one'],
+        'increment_style' => ['style' => 'post'],
+        'linebreak_after_opening_tag' => true,
+        'mb_str_functions' => true,
+        'new_with_braces' => false,
+        'no_php4_constructor' => true,
+        'no_unreachable_default_argument_value' => true,
+        'no_useless_else' => true,
+        'no_useless_return' => true,
+        'not_operator_with_successor_space' => true,
+        'ordered_imports' => ['sort_algorithm' => 'alpha'],
+        'php_unit_strict' => true,
+        'php_unit_method_casing' => ['case' => 'snake_case'],
+        'php_unit_test_annotation' => [
+            'style' => 'annotation',
+        ],
+        'phpdoc_order' => true,
+        'simplified_null_return' => true,
+        'strict_comparison' => true,
+        'strict_param' => true,
+    ])
+    ->setFinder($finder);
