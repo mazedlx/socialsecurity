@@ -1,3 +1,6 @@
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/mazedlx/socialsecurity)
+![GitHub all releases](https://img.shields.io/github/downloads/mazedlx/socialsecurity/total)
+
 # SocialSecurity
 
 Check if Austiran social security numbers are valid.
