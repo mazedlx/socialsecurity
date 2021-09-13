@@ -10,7 +10,7 @@ class SocialSecurityTest extends TestCase
      */
     public function it_validates_social_security_numbers()
     {
-        $socialSecurity = new SocialSecurity('199102399');
+        $socialSecurity = new SocialSecurity('1991020399');
 
         $this->assertTrue($socialSecurity->isValid());
     }
