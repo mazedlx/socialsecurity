@@ -1,5 +1,5 @@
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/mazedlx/socialsecurity)
-![GitHub all releases](https://img.shields.io/github/downloads/mazedlx/socialsecurity/total)
+![GitHub downloads](https://img.shields.io/packagist/dt/mazedlx/socialsecurity)
 
 # SocialSecurity
 
